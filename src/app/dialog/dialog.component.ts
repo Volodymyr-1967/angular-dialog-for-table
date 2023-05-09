@@ -27,7 +27,7 @@ export class DialogComponent {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('Диалог был закрыт...', result);
+      console.log('Диалог был закрыт... ', result);
       if(result) this.name = result.name; else this.name = '';
       if(result) this.surname = result.surname; else this.surname = '';
     });
