@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { SimpleDialogComponent } from "./simple-dialog/simple-dialog.component";
+import { fromEvent, map, switchMap } from "rxjs";
 
 export interface DialogData {
   surname: string;
@@ -14,7 +15,7 @@ export interface DialogData {
 })
 export class DialogComponent {
 
-  surname!: string;
+  surname: string = 'Foo';
   name!: string;
 
   constructor(public dialog: MatDialog) {}

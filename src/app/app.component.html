@@ -1,1 +1,9 @@
+  <mat-grid-list cols="16" rowHeight="8:8">
+    <ng-container *ngFor="let item of data; let i = index;">
+      <mat-grid-tile>
+        <span class="grid-content">{{item}}</span>
+      </mat-grid-tile>
+    </ng-container>
+</mat-grid-list>
+
 <app-dialog></app-dialog>
